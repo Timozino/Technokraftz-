@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'paystackapi',
     'requests',
     "djangoflutterwave",
+    'whitenoise',
     
 ]
 
@@ -146,7 +147,7 @@ STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'login'
@@ -175,3 +176,4 @@ SK_FLU="FLWSECK_TEST-60ac8e059e21962e517ce2b17065dda2-X"
 #     'app.EmailBackEnd.EmailBackEnd',
 # ]
 CSRF_TRUSTED_ORIGINS = ['https://technokraftz.com']
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
